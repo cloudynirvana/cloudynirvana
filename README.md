@@ -1,25 +1,27 @@
-# Hi, I'm Kelechi Ogbonna
+# Kelechi Emeka Ogbonna
 
-**Computational Biologist** * Biotechnology * Precision Medicine
+Computational biologist in Nigeria. B.Sc. Biotechnology (Nile University of Nigeria, 2022), pursuing an M.Sc. in Bioinformatics.
 
-I develop computational frameworks that advance our understanding of complex diseases. My work sits at the intersection of **mathematical modeling**, **systems biology**, and **clinical research** -- building tools that could help transform how we approach treatment.
+I build dynamical models of cancer and ask a narrow question of each one: what would we have to measure before the model can be trusted? My work sits between mathematical oncology, identifiability analysis and clinical workflow.
 
-### Current Research
+## Current work
 
-- **[Project Confluence](https://github.com/cloudynirvana/project-confluence)** -- A complexity-restoring precision oncology framework. Uses 15-dimensional ODE systems, adaptive therapy controllers, and Bayesian digital twins to model cancer as a dynamical system rather than a static target. Validated across 200 uncertain biological scenarios with 0% resistant takeover.
+- **[Project Confluence](https://github.com/cloudynirvana/project-confluence)**: an ODE-based research framework for cancer as a controlled dynamical system, with adaptive-therapy controllers and PK/PD layers. All results so far are in-silico on synthetic or public cell-line data. It is not validated on patients.
+- **[Research theses hub](https://github.com/cloudynirvana/research-theses-hub)**: an index of computational theses, each a reproducible repo with fixed-seed simulations. Start with:
+  - [T11: desmoplastic transport identifiability](https://github.com/cloudynirvana/thesis-11-desmoplastic-transport-identifiability). Which stroma measurements a lumped tumour ODE needs before it can represent a drug-delivery barrier.
+  - [T20: occult residual disease under liquid-biopsy observers](https://github.com/cloudynirvana/thesis-20-occult-modes-partial-liquid-biopsy-observer)
+  - [T21: metastasis graphs with barrier conductances](https://github.com/cloudynirvana/thesis-21-metastasis-graph-barrier-conductances)
+  - [T04: occult residual disease as a hybrid switching system](https://github.com/cloudynirvana/thesis-04-occult-hybrid-switching)
 
-- - **Metabolic Modeling** -- Investigating cancer metabolism through strain-based computational approaches, with focus on TNBC and multi-pathway metabolic vulnerabilities.
- 
-  - ### Research Interests
- 
-  - - Complex systems in disease (cancer, metabolic disease, neurodegeneration)
-    - - Adaptive therapy and evolutionary containment strategies
-      - - Mathematical oncology and pharmacokinetic/pharmacodynamic modeling
-        - - Translational bioinformatics -- bridging computational models to clinical outcomes
-         
-          - ### Connect
-         
-          - - Nigeria
-            - - BSc Biotechnology * Pursuing MSc in Bioinformatics
-              - - Open to research collaborations in computational biology and precision medicine
-                - 
+## How I work
+
+- Knowledge ≠ evidence ≠ mechanism ≠ parameter ≠ prediction. Each thesis states which one it is making.
+- Every result is reproducible from a seeded script in the repo.
+- Research only. Nothing here is a medical device, clinical decision support, a dose or a cure.
+
+## Looking for
+
+- Clinical or wet-lab collaborators with real perfusion, ctDNA or treatment-response data to test these models against.
+- Supervision and feedback on the theses from mathematical oncologists and clinicians.
+
+Open to research collaboration in computational biology and precision oncology.
