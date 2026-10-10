@@ -1,27 +1,38 @@
 # Kelechi Emeka Ogbonna
 
-Computational biologist in Nigeria. B.Sc. Biotechnology (Nile University of Nigeria, 2022), pursuing an M.Sc. in Bioinformatics.
+**Bioinformatics and computational biology.** B.Sc. Biotechnology, Nile University of Nigeria (2022); pursuing an M.Sc. in Bioinformatics.
 
-I build dynamical models of cancer and ask a narrow question of each one: what would we have to measure before the model can be trusted? My work sits between mathematical oncology, identifiability analysis and clinical workflow.
+I write tested Python tools for biological data and models, and I try to be precise about what each result is: a measurement, a simulation, or a hypothesis.
 
-## Current work
+## Featured work
 
-- **[Project Confluence](https://github.com/cloudynirvana/project-confluence)**: an ODE-based research framework for cancer as a controlled dynamical system, with adaptive-therapy controllers and PK/PD layers. All results so far are in-silico on synthetic or public cell-line data. It is not validated on patients.
-- **[Research theses hub](https://github.com/cloudynirvana/research-theses-hub)**: an index of computational theses, each a reproducible repo with fixed-seed simulations. Start with:
-  - [T11: desmoplastic transport identifiability](https://github.com/cloudynirvana/thesis-11-desmoplastic-transport-identifiability). Which stroma measurements a lumped tumour ODE needs before it can represent a drug-delivery barrier.
-  - [T20: occult residual disease under liquid-biopsy observers](https://github.com/cloudynirvana/thesis-20-occult-modes-partial-liquid-biopsy-observer)
-  - [T21: metastasis graphs with barrier conductances](https://github.com/cloudynirvana/thesis-21-metastasis-graph-barrier-conductances)
-  - [T04: occult residual disease as a hybrid switching system](https://github.com/cloudynirvana/thesis-04-occult-hybrid-switching)
+### [qslite](https://github.com/cloudynirvana/qslite): viral quasispecies from sequencing reads
+Aligns reads with minimap2, counts alleles at every position, measures within-host diversity (Shannon entropy, nucleotide diversity), calls minor variants with a binomial error model and FDR control, measures linkage between variant sites from spanning reads, and exports the population as a GFA variation graph.
+On the HIV test dataset from V-pipe and ShoRAH, it **recovers all 64 SNVs that ShoRAH reports**. Includes tests on a synthetic two-haplotype population and CI.
+`Python` `pysam` `minimap2` `SciPy` `GFA`
 
-## How I work
+### [Project Confluence](https://github.com/cloudynirvana/project-confluence): dynamical models of cancer metabolism
+An ODE framework for metabolic reprogramming across cancer types, with identifiability analysis and adaptive-control experiments. Fitting to real CCLE metabolomics data (928 cell lines) raised the number of identifiable parameters from 7 to 15 of 17. About 190 Python modules and 315 automated tests run in GitHub Actions. All results are in-silico; none are validated on patients.
+`Python` `NumPy/SciPy` `ODEs` `pytest` `FastAPI`
 
-- Knowledge ≠ evidence ≠ mechanism ≠ parameter ≠ prediction. Each thesis states which one it is making.
-- Every result is reproducible from a seeded script in the repo.
-- Research only. Nothing here is a medical device, clinical decision support, a dose or a cure.
+### [TNBC Metabolic Strain Model](https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD): ATP and ROS dynamics in triple-negative breast cancer
+A compact ODE model with stability and bifurcation analysis and parallel parameter sweeps, packaged as a reusable module with Colab notebooks.
+`Python` `Jupyter` `dynamical systems`
 
-## Looking for
+## Skills, with where to see them
 
-- Clinical or wet-lab collaborators with real perfusion, ctDNA or treatment-response data to test these models against.
-- Supervision and feedback on the theses from mathematical oncologists and clinicians.
+| Area | Evidence |
+| --- | --- |
+| Sequence data analysis | qslite: alignment, pileups, variant calling, linkage |
+| Graphs | qslite (GFA variation graphs); Confluence (Forman-Ricci curvature on interaction networks) |
+| Software practice | pytest suites and GitHub Actions in qslite and Confluence; packaged, installable code |
+| Mathematical modelling | ODEs, identifiability, bifurcation analysis (Confluence, TNBC) |
+| Wet lab | B.Sc. project: plant-extract silver nanoparticles and in vitro enzyme (α-amylase) assays |
 
-Open to research collaboration in computational biology and precision oncology.
+## Other work
+
+Shorter exploratory and theoretical write-ups (mostly cancer-modelling thought experiments, all in-silico) are indexed in one place: **[research-theses-hub](https://github.com/cloudynirvana/research-theses-hub)**. They are idea sketches, not peer-reviewed results.
+
+## Contact
+
+kelechiogbonna300@gmail.com · Open to doctoral positions in bioinformatics and computational biology.
