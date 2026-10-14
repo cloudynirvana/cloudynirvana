@@ -2,9 +2,19 @@
 
 **Bioinformatics and computational biology.** B.Sc. Biotechnology, Nile University of Nigeria (2022); pursuing an M.Sc. in Bioinformatics.
 
-I write tested Python tools for biological data and models, and I try to be precise about what each result is: a measurement, a simulation, or a hypothesis.
+I write tested Python tools for biological data and models, and I try to be precise about what each result is: a measurement, a simulation, or a hypothesis. Lately I also build simulations of decision-making and control for spaceflight.
+
+📄 **[CV (PDF)](cv/Kelechi_Ogbonna_CV.pdf)**
 
 ## Featured work
+
+### [Adaptive Convergence](https://github.com/cloudynirvana/adaptive-convergence): when should a civilisation stop converging on its best plan?
+Agent-based simulation of long-horizon R&D strategy across procedurally generated technology graphs with hidden dead ends. Committing to the best option while abandoning projects on statistical evidence of overrun gave **+15.8% capability** over the best convergent baseline (95% CI 13.0–18.9%, 400 held-out worlds), and extra exploration made things worse. Includes a replication of March (1991).
+`Python` `NumPy/SciPy` `agent-based modelling` `statistics`
+
+### [Rocket Lander RL](https://github.com/cloudynirvana/rocket-lander-rl): reward shaping, reward hacking and robustness
+PPO agents trained to land a rocket under four reward designs and five seeds, evaluated on the unshaped reward. Reproduces a hover reward hack, fixes it with potential-based shaping, and stress-tests agents against a hand-written control law under wind and gravity dispersions.
+`Python` `PyTorch` `Stable-Baselines3` `Gymnasium`
 
 ### [qslite](https://github.com/cloudynirvana/qslite): viral quasispecies from sequencing reads
 Aligns reads with minimap2, counts alleles at every position, measures within-host diversity (Shannon entropy, nucleotide diversity), calls minor variants with a binomial error model and FDR control, measures linkage between variant sites from spanning reads, and exports the population as a GFA variation graph.
@@ -35,4 +45,4 @@ Shorter exploratory and theoretical write-ups (mostly cancer-modelling thought e
 
 ## Contact
 
-kelechiogbonna300@gmail.com · Open to doctoral positions in bioinformatics and computational biology.
+kelechiogbonna300@gmail.com · Open to internships, graduate roles and doctoral positions in computational modelling, computational biology and space life sciences.
