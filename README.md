@@ -13,7 +13,7 @@ Agent-based simulation of long-horizon R&D strategy across procedurally generate
 `Python` `NumPy/SciPy` `agent-based modelling` `statistics`
 
 ### [Rocket Lander RL](https://github.com/cloudynirvana/rocket-lander-rl): reward shaping, reward hacking and robustness
-PPO agents trained to land a rocket under four reward designs and five seeds, evaluated on the unshaped reward. Reproduces a hover reward hack, fixes it with potential-based shaping, and stress-tests agents against a hand-written control law under wind and gravity dispersions.
+PPO agents trained to land a rocket under four reward designs and five seeds, evaluated on 500 unshaped landings each. The trained agent lands on the pad **99.8%** of the time vs. 79.8% for a hand-written control law. A flawed bonus made every seed **hover instead of land** (95% timeouts); potential-based shaping fixed it (98.2% landings).
 `Python` `PyTorch` `Stable-Baselines3` `Gymnasium`
 
 <!-- qslite hidden until the repository is public:

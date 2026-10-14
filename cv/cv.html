@@ -57,8 +57,9 @@
 <div class="entry">
   <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/rocket-lander-rl">Rocket Lander RL</a>: reward shaping, reward hacking and robustness</span><span class="date">2026</span></div>
   <ul>
-    <li>Trained PPO agents to land a rocket (Gymnasium LunarLander) under four reward designs × 5 seeds, all evaluated on the unshaped reward. Reproduced and measured a hover reward hack, then removed it with potential-based shaping (Ng et al., 1999) plus a time cost.</li>
-    <li>Monte-Carlo-tested trained agents against a hand-written control law under wind and gravity dispersions.</li>
+    <li>Trained PPO agents to land a rocket (Gymnasium LunarLander) under four reward designs × 5 seeds, all evaluated on 500 landings with the unshaped reward. The trained agent landed on the pad <b>99.8%</b> of the time vs. <b>79.8%</b> for a hand-written control law.</li>
+    <li>Reproduced reward hacking: a per-frame "upright and slow" bonus taught all 5 seeds to <b>hover until timeout (95% of episodes; 4.8% landings)</b>. Potential-based shaping (Ng et al., 1999) removed the hack and restored 98.2% landings.</li>
+    <li>Monte Carlo dispersion tests: agents trained only in nominal conditions held 99% landings under heavier gravity (control law 49%), but all methods failed in maximum wind (≤ 21%).</li>
   </ul>
   <div class="stack">Python · PyTorch · Stable-Baselines3 · Gymnasium · pytest</div>
 </div>
