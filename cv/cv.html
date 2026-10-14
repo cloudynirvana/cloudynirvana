@@ -4,26 +4,25 @@
 <meta charset="utf-8">
 <title>Kelechi Emeka Ogbonna – CV</title>
 <style>
-  @page { size: A4; margin: 13mm 14mm; }
+  @page { size: A4; margin: 15mm 16mm; }
   :root { --ink: #1a1a1a; --muted: #555; --accent: #0b4f6c; --rule: #c9d3d8; }
   * { box-sizing: border-box; }
-  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 9.3pt; line-height: 1.36; margin: 0; background: #fff; }
-  h1 { font-size: 19pt; margin: 0; color: var(--accent); letter-spacing: 0.3px; }
-  .tagline { font-size: 10.3pt; margin: 2px 0 3px; font-weight: 600; }
-  .contact { color: var(--muted); font-size: 8.8pt; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.42; margin: 0; background: #fff; }
+  h1 { font-size: 20pt; margin: 0; color: var(--accent); }
+  .tagline { font-size: 11pt; margin: 2px 0 3px; font-weight: 600; }
+  .contact { color: var(--muted); font-size: 9.2pt; }
   .contact a { color: var(--muted); }
-  h2 { break-after: avoid; font-size: 10.2pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 11px 0 5px; }
-  .entry { margin-bottom: 6px; break-inside: avoid; }
+  h2 { break-after: avoid; font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 13px 0 6px; }
+  .entry { margin-bottom: 8px; break-inside: avoid; }
   .row { display: flex; justify-content: space-between; gap: 12px; }
   .title { font-weight: 700; }
   .where { color: var(--muted); }
   .date { color: var(--muted); white-space: nowrap; }
-  .stack { color: var(--muted); font-size: 8.4pt; }
-  ul { margin: 2px 0 0 0; padding-left: 15px; }
-  li { margin: 1px 0; }
+  ul { margin: 2px 0 0 0; padding-left: 16px; }
+  li { margin: 2px 0; }
   a { color: var(--accent); text-decoration: none; }
   p { margin: 0 0 4px; }
-  .skills td { padding: 1px 8px 1px 0; vertical-align: top; }
+  .skills td { padding: 2px 10px 2px 0; vertical-align: top; }
   .skills td:first-child { font-weight: 700; white-space: nowrap; }
 </style>
 </head>
@@ -31,7 +30,7 @@
 
 <header>
   <h1>Kelechi Emeka Ogbonna</h1>
-  <div class="tagline">Computational modelling &amp; simulation · biology, autonomy and spaceflight systems</div>
+  <div class="tagline">Biotechnologist who builds computer simulations</div>
   <div class="contact">
     Nigeria · <a href="mailto:kelechiogbonna300@gmail.com">kelechiogbonna300@gmail.com</a> ·
     <a href="https://github.com/cloudynirvana">github.com/cloudynirvana</a> ·
@@ -39,100 +38,91 @@
   </div>
 </header>
 
-<h2>Profile</h2>
-<p>Biotechnology graduate (M.Sc. in progress) who builds tested, reproducible simulation software: dynamical-systems models of disease and physiology, agent-based models of decision-making under uncertainty, and reinforcement-learning control. I separate measurements, simulations and hypotheses, report negative findings, and back claims with held-out evaluation and proper statistics. Seeking internships or graduate roles in computational modelling, space life sciences, or simulation and autonomy.</p>
+<h2>About me</h2>
+<p>I trained as a biotechnologist and now write software that simulates how things behave. Examples include diseases in the body, an AI landing a rocket, and space programmes choosing what to build. I care about testing my work properly and saying clearly what a result does and does not prove. I am looking for an internship or graduate role in computer modelling, space life sciences or simulation.</p>
 
-<h2>Selected projects</h2>
+<h2>Projects</h2>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/adaptive-convergence">Adaptive Convergence</a>: simulating R&amp;D strategy for a spacefaring civilisation</span><span class="date">2026</span></div>
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/rocket-lander-rl">Teaching an AI to land a rocket</a></span><span class="date">2026</span></div>
   <ul>
-    <li>Agent-based simulator of long-horizon technology development (procedural technology graphs with competing routes, hidden dead ends, Bayesian cost learning, recursive budget growth); six strategies benchmarked against a perfect-information oracle.</li>
-    <li>Committing to the best option while abandoning projects on statistical evidence of overrun gave <b>+15.8% capability</b> over the best convergent baseline (95% CI 13.0–18.9%, better in 75% of 400 held-out worlds). It <b>cut budget lost to dead ends from 21% to 9%</b> and raised interstellar-milestone success from 41% to 56%.</li>
-    <li>A 20-condition sweep showed the advantage exists only when failures lie outside the planner's model, and ablations showed extra exploration <i>reduced</i> performance. Found and fixed a belief-model bug, then reran all experiments. Replicated March (1991, <i>Organization Science</i>); held-out tuning seeds, bootstrap CIs, Holm-corrected Wilcoxon tests, 21 unit tests.</li>
+    <li>Trained an AI to land a rocket in a physics simulator. It landed safely on the pad <b>499 times out of 500</b>; a hand-written control program managed 399.</li>
+    <li>Showed how a badly designed reward makes an AI "cheat": paid for staying upright, it learned to hover forever instead of landing. I fixed the reward, and landings returned to 98%.</li>
+    <li>Tested the AI in strong wind and heavier gravity it had never seen, and reported where it failed as well as where it succeeded.</li>
   </ul>
-  <div class="stack">Python · NumPy · SciPy · pytest</div>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/rocket-lander-rl">Rocket Lander RL</a>: reward shaping, reward hacking and robustness</span><span class="date">2026</span></div>
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/adaptive-convergence">When should a space programme abandon a plan?</a></span><span class="date">2026</span></div>
   <ul>
-    <li>Trained PPO agents to land a rocket (Gymnasium LunarLander) under four reward designs × 5 seeds, all evaluated on 500 landings with the unshaped reward. The trained agent landed on the pad <b>99.8%</b> of the time vs. <b>79.8%</b> for a hand-written control law.</li>
-    <li>Reproduced reward hacking: a per-frame "upright and slow" bonus taught all 5 seeds to <b>hover until timeout (95% of episodes; 4.8% landings)</b>. Potential-based shaping (Ng et al., 1999) removed the hack and restored 98.2% landings.</li>
-    <li>Monte Carlo dispersion tests: agents trained only in nominal conditions held 99% landings under heavier gravity (control law 49%), but all methods failed in maximum wind (≤ 21%).</li>
+    <li>Built a simulation of a space programme choosing which technologies to develop for the Moon, Mars and beyond. Some paths secretly lead nowhere.</li>
+    <li>Compared six decision strategies across 400 simulated worlds. The best was "commit fully, but quit a project once the evidence shows it is failing". It achieved <b>16% more progress</b> and <b>cut wasted budget by more than half</b> compared with never quitting.</li>
+    <li>Found and corrected a mistake in my own model, then reran every experiment before reporting results.</li>
   </ul>
-  <div class="stack">Python · PyTorch · Stable-Baselines3 · Gymnasium · pytest</div>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Project Confluence</a>: shared metabolic dynamics across cancer types</span></div>
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Modelling how cancer cells use energy</a> (Project Confluence)</span></div>
   <ul>
-    <li>ODE state-space framework mapping six metabolic enzymes (HK2, PKM2, LDHA, IDH1/2, PDK1, G6PD) to model channels, with structural identifiability analysis and an adaptive controller.</li>
-    <li>Validating against real CCLE metabolomics (225 metabolites × 928 cell lines) instead of synthetic data raised identifiable parameters from <b>7 to 15 of 17</b> across AML, osteosarcoma and NSCLC. About 43k lines of Python with <b>330+ tests</b> in GitHub Actions. Exposed to AI agents through an <a href="https://github.com/cloudynirvana/saem-mcp">MCP server</a>.</li>
+    <li>Wrote a mathematical model of cancer-cell metabolism and tested it against real laboratory data from 928 cancer cell lines.</li>
+    <li>Using real data instead of made-up data let the model pin down <b>15 of its 17 unknowns</b>, up from 7. The software is about 43,000 lines of Python, checked by more than 330 automated tests.</li>
   </ul>
-  <div class="stack">Python · SciPy · ODEs · identifiability · pytest · GitHub Actions · FastAPI · Model Context Protocol</div>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title">Further modelling and software</span></div>
+  <div class="row"><span class="title">Other projects</span></div>
   <ul>
-    <li><a href="https://github.com/cloudynirvana/complexity-science"><b>Complexity Science</b></a>: gated pipeline that turns structured clinical case cards into ranked, evidence-tagged pathway hypotheses, without ever converting guideline text into model parameters (27 tests).</li>
-    <li><a href="https://github.com/cloudynirvana/individuality-dynamics"><b>Individuality Dynamics</b></a>: coupled Kuramoto-oscillator experiment sweeping internal vs. external coupling, with multi-seed confidence intervals and Lempel–Ziv complexity.</li>
-    <li><a href="https://github.com/cloudynirvana/fly-brain-vs-tumor"><b>Fly Brain vs. Tumor</b></a>: browser simulation in TypeScript/React in which a sparse mushroom-body circuit learns dosing on a toy cancer ODE (RK4) by reward-modulated plasticity.</li>
-    <li><a href="https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD"><b>TNBC metabolic strain model</b></a> (M.Sc. research): ODE and Monte Carlo model of ATP, ROS and glucose dynamics in triple-negative breast cancer, with stability and bifurcation analysis.</li>
-    <li><a href="https://github.com/cloudynirvana/simplifyr"><b>simplifyr</b></a> (Dev3Pack 2026 hackathon, Solana Mobile track): escrow app with a Rust/Anchor on-chain program, a Next.js/TypeScript front end and an LLM-based dispute arbiter.</li>
+    <li><a href="https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD"><b>Breast cancer energy model</b></a> (M.Sc. research): simulated how aggressive breast-cancer cells handle energy and stress.</li>
+    <li><a href="https://github.com/cloudynirvana/fly-brain-vs-tumor"><b>Fly Brain vs. Tumor</b></a>: a browser game where a simplified fruit-fly brain learns to dose a simulated tumour.</li>
+    <li><a href="https://github.com/cloudynirvana/simplifyr"><b>simplifyr</b></a>: a payments app built at a 2026 hackathon (Solana Mobile track).</li>
+  </ul>
+</div>
+
+<h2>Research writing</h2>
+<div class="entry">
+  <p>Around 50 independent research papers (not peer-reviewed) on modelling disease and astronaut health, collected at <a href="https://github.com/cloudynirvana/research-theses-hub">research-theses-hub</a>. Highlights:</p>
+  <ul>
+    <li><b>AI-assisted planning of cervical cancer care</b>, published on Zenodo (doi:<a href="https://doi.org/10.5281/zenodo.23210715">10.5281/zenodo.23210715</a>).</li>
+    <li><b>Astronaut health</b>: bone loss on a trip to Mars, radiation damage from solar storms, and how medicines degrade on the Moon.</li>
   </ul>
 </div>
 
 <div class="entry" style="break-inside: avoid">
-<h2>Research writing</h2>
-  <div class="row"><span class="title">Independent computational thesis series</span> <span class="date">2026</span></div>
-  <p>About 50 computational manuscripts on identifiability, observability and control in disease and space-medicine models, indexed at <a href="https://github.com/cloudynirvana/research-theses-hub">research-theses-hub</a>. Independent and not peer-reviewed; most include runnable Python. Selected:</p>
-  <ul>
-    <li><b>Closed-loop agentic care planning for cervical cancer</b> (#52): care framed as a partially observed control problem with decision gates; synthetic worked example and study protocol. Zenodo, doi:<a href="https://doi.org/10.5281/zenodo.23210715">10.5281/zenodo.23210715</a>.</li>
-    <li><b>Identifiability of a shared metabolic cancer ODE</b> (#9): Fisher-rank analysis showing a lactate/glucose ratio identifies 1 of 5 rates and a multi-channel snapshot 4 of 5.</li>
-    <li><b>Space-medicine models</b>: microgravity bone loss on Mars-transit schedules (#45), radiation bystander effects under solar particle events (#48), and drug degradation on the lunar surface (#50).</li>
-  </ul>
-</div>
-
 <h2>Education</h2>
 <div class="entry">
   <div class="row"><span><span class="title">M.Sc. Biotechnology</span> <span class="where">· Ahmadu Bello University, Zaria</span></span><span class="date">In progress</span></div>
-  <div>Systems biology, nonlinear dynamics, bioinformatics, bioprocess engineering.</div>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">B.Sc. Biotechnology (Hons)</span> <span class="where">· Nile University of Nigeria, Abuja</span></span><span class="date">July 2022</span></div>
-  <div>Thesis: <a href="https://github.com/cloudynirvana/thesis-bsc-carica-papaya-agnp"><i>In vitro antidiabetic activity of silver nanoparticles synthesised from Carica papaya leaf extract</i></a>: nanoparticle synthesis, characterisation, and α-amylase and antioxidant assays.</div>
+  <div class="row"><span><span class="title">B.Sc. Biotechnology (Hons)</span> <span class="where">· Nile University of Nigeria, Abuja</span></span><span class="date">2022</span></div>
+  <div>Final project: made silver nanoparticles from papaya leaves and tested them in the lab as a possible diabetes treatment.</div>
+</div>
 </div>
 
 <h2>Experience</h2>
 <div class="entry">
-  <div class="row"><span><span class="title">Biotechnology Instructor</span> <span class="where">· NYSC, Etinan College of Health and Technology, Akwa Ibom</span></span></div>
-  <ul><li>Designed and taught biotechnology modules, including introductory mathematical modelling of biological processes; led laboratory sessions and supervised student projects with limited equipment.</li></ul>
+  <div class="row"><span><span class="title">Biotechnology Instructor</span> <span class="where">· NYSC, Etinan College of Health and Technology</span></span></div>
+  <ul><li>Taught biotechnology courses and ran laboratory classes; introduced students to simple mathematical models of biology.</li></ul>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Research Intern</span> <span class="where">· National Biotechnology Development Agency (NABDA), Abuja</span></span></div>
-  <ul><li>Molecular sequencing workflows and laboratory analysis on genetically modified crop projects; exposure to biosafety regulation.</li></ul>
+  <div class="row"><span><span class="title">Research Intern</span> <span class="where">· National Biotechnology Development Agency, Abuja</span></span></div>
+  <ul><li>Worked on DNA sequencing and lab analysis for genetically modified crop projects.</li></ul>
 </div>
 <div class="entry">
   <div class="row"><span><span class="title">Laboratory Intern</span> <span class="where">· Arubah Medical Diagnostic Services, Calabar</span></span></div>
-  <ul><li>Processed clinical samples by PCR and spectrophotometry under laboratory quality-control procedures.</li></ul>
+  <ul><li>Tested patient samples using PCR and other standard lab methods.</li></ul>
 </div>
 <div class="entry">
   <div class="row"><span><span class="title">Managing Director</span> <span class="where">· Uloma Shopping Mall</span> &nbsp;|&nbsp; <span class="title">POS Operator</span> <span class="where">· MoneyPoint Microfinance Bank</span></span></div>
-  <ul><li>Ran operations, finances, inventory and supplier relationships for a retail business; processed electronic payments in line with banking compliance procedures.</li></ul>
+  <ul><li>Ran a retail business day to day (staff, stock, suppliers and money) and handled customer payments at a microfinance bank.</li></ul>
 </div>
 
 <h2>Skills</h2>
 <table class="skills">
-  <tr><td>Programming</td><td>Python (NumPy, SciPy, Matplotlib, PyTorch, Stable-Baselines3, Gymnasium, FastAPI, pytest), TypeScript/React, MATLAB; working knowledge of Rust (Anchor); Git, GitHub Actions, Jupyter</td></tr>
-  <tr><td>Modelling</td><td>ODEs, stability and bifurcation analysis, structural and practical identifiability, Monte Carlo, agent-based simulation, Bayesian updating, reinforcement learning</td></tr>
-  <tr><td>Statistics</td><td>Bootstrap confidence intervals, paired and nonparametric tests, multiple-comparison correction, held-out evaluation design</td></tr>
-  <tr><td>Laboratory</td><td>PCR, sequencing workflows, spectrophotometry, nanoparticle synthesis, enzyme and antioxidant assays, BLAST</td></tr>
+  <tr><td>Programming</td><td>Python (including machine learning and scientific libraries), TypeScript, MATLAB, Git</td></tr>
+  <tr><td>Methods</td><td>Computer simulation, mathematical modelling, machine learning, statistics</td></tr>
+  <tr><td>Laboratory</td><td>PCR, DNA sequencing, spectrophotometry, nanoparticle synthesis</td></tr>
+  <tr><td>Other</td><td>IELTS 7.5 · Google Project Management certificate · Anthropic AI courses</td></tr>
 </table>
-
-<h2>Certifications</h2>
-<p>IELTS General 7.5 · Google Project Management (Coursera) · Anthropic Academy: AI Fluency, Claude 101, Model Context Protocol (intro and advanced)</p>
 
 </body>
 </html>
