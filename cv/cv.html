@@ -4,22 +4,21 @@
 <meta charset="utf-8">
 <title>Kelechi Emeka Ogbonna – CV</title>
 <style>
-  @page { size: A4; margin: 14mm 15mm; }
-  :root { --ink: #1a1a1a; --muted: #555; --accent: #0b4f6c; --rule: #c9d3d8; --todo: #b00020; }
+  @page { size: A4; margin: 13mm 14mm; }
+  :root { --ink: #1a1a1a; --muted: #555; --accent: #0b4f6c; --rule: #c9d3d8; }
   * { box-sizing: border-box; }
-  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 9.6pt; line-height: 1.38; margin: 0; background: #fff; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 9.3pt; line-height: 1.36; margin: 0; background: #fff; }
   h1 { font-size: 19pt; margin: 0; color: var(--accent); letter-spacing: 0.3px; }
-  .tagline { font-size: 10.5pt; margin: 2px 0 4px; font-weight: 600; }
-  .contact { color: var(--muted); font-size: 9pt; }
+  .tagline { font-size: 10.3pt; margin: 2px 0 3px; font-weight: 600; }
+  .contact { color: var(--muted); font-size: 8.8pt; }
   .contact a { color: var(--muted); }
-  h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 12px 0 6px; }
-  .entry { margin-bottom: 7px; break-inside: avoid; }
+  h2 { break-after: avoid; font-size: 10.2pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 11px 0 5px; }
+  .entry { margin-bottom: 6px; break-inside: avoid; }
   .row { display: flex; justify-content: space-between; gap: 12px; }
   .title { font-weight: 700; }
   .where { color: var(--muted); }
   .date { color: var(--muted); white-space: nowrap; }
-  .todo { color: var(--todo); font-style: italic; }
-  .stack { color: var(--muted); font-size: 8.6pt; }
+  .stack { color: var(--muted); font-size: 8.4pt; }
   ul { margin: 2px 0 0 0; padding-left: 15px; }
   li { margin: 1px 0; }
   a { color: var(--accent); text-decoration: none; }
@@ -35,49 +34,63 @@
   <div class="tagline">Computational modelling &amp; simulation · biology, autonomy and spaceflight systems</div>
   <div class="contact">
     Nigeria · <a href="mailto:kelechiogbonna300@gmail.com">kelechiogbonna300@gmail.com</a> ·
-    <a href="https://github.com/cloudynirvana">github.com/cloudynirvana</a>
+    <a href="https://github.com/cloudynirvana">github.com/cloudynirvana</a> ·
+    ORCID <a href="https://orcid.org/0009-0006-0065-8226">0009-0006-0065-8226</a>
   </div>
 </header>
 
 <h2>Profile</h2>
-<p>Biotechnology graduate who builds tested, reproducible simulation software: dynamical-systems models of disease and physiology, agent-based models of decision-making under uncertainty, and reinforcement-learning control. I report what results do and do not show, including negative findings, and I back claims with held-out evaluation and proper statistics. Seeking internships or graduate roles in computational modelling, space life sciences, or simulation and autonomy.</p>
+<p>Biotechnology graduate (M.Sc. in progress) who builds tested, reproducible simulation software: dynamical-systems models of disease and physiology, agent-based models of decision-making under uncertainty, and reinforcement-learning control. I separate measurements, simulations and hypotheses, report negative findings, and back claims with held-out evaluation and proper statistics. Seeking internships or graduate roles in computational modelling, space life sciences, or simulation and autonomy.</p>
 
 <h2>Selected projects</h2>
 
 <div class="entry">
   <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/adaptive-convergence">Adaptive Convergence</a>: simulating R&amp;D strategy for a spacefaring civilisation</span><span class="date">2026</span></div>
   <ul>
-    <li>Built an agent-based simulator of long-horizon technology development (procedural technology graphs with competing routes, hidden dead ends, Bayesian cost learning, recursive budget growth) and benchmarked six strategies against a perfect-information oracle.</li>
+    <li>Agent-based simulator of long-horizon technology development (procedural technology graphs with competing routes, hidden dead ends, Bayesian cost learning, recursive budget growth); six strategies benchmarked against a perfect-information oracle.</li>
     <li>Committing to the best option while abandoning projects on statistical evidence of overrun gave <b>+15.8% capability</b> over the best convergent baseline (95% CI 13.0–18.9%, better in 75% of 400 held-out worlds). It <b>cut budget lost to dead ends from 21% to 9%</b> and raised interstellar-milestone success from 41% to 56%.</li>
-    <li>A 20-condition sweep showed the advantage exists only when failures lie outside the planner's model; ablations showed extra exploration <i>reduced</i> performance. Found and fixed a belief-model bug, verified the fix against Monte Carlo, and reran every experiment.</li>
-    <li>Replicated March (1991, <i>Organization Science</i>). Held-out tuning seeds, bootstrap CIs, Wilcoxon tests with Holm correction, 21 unit tests.</li>
+    <li>A 20-condition sweep showed the advantage exists only when failures lie outside the planner's model, and ablations showed extra exploration <i>reduced</i> performance. Found and fixed a belief-model bug, then reran all experiments. Replicated March (1991, <i>Organization Science</i>); held-out tuning seeds, bootstrap CIs, Holm-corrected Wilcoxon tests, 21 unit tests.</li>
   </ul>
-  <div class="stack">Python · NumPy · SciPy · Matplotlib · pytest</div>
+  <div class="stack">Python · NumPy · SciPy · pytest</div>
 </div>
 
 <div class="entry">
   <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/rocket-lander-rl">Rocket Lander RL</a>: reward shaping, reward hacking and robustness</span><span class="date">2026</span></div>
   <ul>
-    <li>Trained PPO agents to land a rocket (Gymnasium LunarLander) under four reward designs × 5 seeds. Evaluated every agent on the unshaped reward so shaping cannot inflate scores.</li>
-    <li>Reproduced and measured a reward hack (agents hovering to farm a per-frame bonus), then removed it with potential-based shaping (Ng et al., 1999) plus a time cost.</li>
-    <li>Monte-Carlo-tested agents and a hand-written control law under wind and gravity dispersions.</li>
+    <li>Trained PPO agents to land a rocket (Gymnasium LunarLander) under four reward designs × 5 seeds, all evaluated on the unshaped reward. Reproduced and measured a hover reward hack, then removed it with potential-based shaping (Ng et al., 1999) plus a time cost.</li>
+    <li>Monte-Carlo-tested trained agents against a hand-written control law under wind and gravity dispersions.</li>
   </ul>
   <div class="stack">Python · PyTorch · Stable-Baselines3 · Gymnasium · pytest</div>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Project Confluence</a>: dynamical models of cancer metabolism</span><span class="date todo">YYYY–YYYY</span></div>
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Project Confluence</a>: shared metabolic dynamics across cancer types</span></div>
   <ul>
-    <li>ODE framework for metabolic reprogramming across cancer types, with structural identifiability analysis and adaptive-control experiments.</li>
-    <li>Fitting to CCLE metabolomics (928 cell lines) raised identifiable parameters from 7 to 15 of 17. About 190 Python modules and 330+ automated tests in GitHub Actions. All results are in silico.</li>
+    <li>ODE state-space framework mapping six metabolic enzymes (HK2, PKM2, LDHA, IDH1/2, PDK1, G6PD) to model channels, with structural identifiability analysis and an adaptive controller.</li>
+    <li>Validating against real CCLE metabolomics (225 metabolites × 928 cell lines) instead of synthetic data raised identifiable parameters from <b>7 to 15 of 17</b> across AML, osteosarcoma and NSCLC. About 43k lines of Python with <b>330+ tests</b> in GitHub Actions. Exposed to AI agents through an <a href="https://github.com/cloudynirvana/saem-mcp">MCP server</a>.</li>
   </ul>
-  <div class="stack">Python · SciPy · ODEs · identifiability · pytest · GitHub Actions · FastAPI</div>
+  <div class="stack">Python · SciPy · ODEs · identifiability · pytest · GitHub Actions · FastAPI · Model Context Protocol</div>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD">TNBC metabolic strain model</a> (M.Sc. research)</span><span class="date todo">YYYY</span></div>
+  <div class="row"><span class="title">Further modelling and software</span></div>
   <ul>
-    <li>ODE and Monte Carlo model of ATP, reactive-oxygen-species and glucose dynamics in triple-negative breast cancer, with stability and bifurcation analysis and parameter sweeps.</li>
+    <li><a href="https://github.com/cloudynirvana/complexity-science"><b>Complexity Science</b></a>: gated pipeline that turns structured clinical case cards into ranked, evidence-tagged pathway hypotheses, without ever converting guideline text into model parameters (27 tests).</li>
+    <li><a href="https://github.com/cloudynirvana/individuality-dynamics"><b>Individuality Dynamics</b></a>: coupled Kuramoto-oscillator experiment sweeping internal vs. external coupling, with multi-seed confidence intervals and Lempel–Ziv complexity.</li>
+    <li><a href="https://github.com/cloudynirvana/fly-brain-vs-tumor"><b>Fly Brain vs. Tumor</b></a>: browser simulation in TypeScript/React in which a sparse mushroom-body circuit learns dosing on a toy cancer ODE (RK4) by reward-modulated plasticity.</li>
+    <li><a href="https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD"><b>TNBC metabolic strain model</b></a> (M.Sc. research): ODE and Monte Carlo model of ATP, ROS and glucose dynamics in triple-negative breast cancer, with stability and bifurcation analysis.</li>
+    <li><a href="https://github.com/cloudynirvana/simplifyr"><b>simplifyr</b></a> (Dev3Pack 2026 hackathon, Solana Mobile track): escrow app with a Rust/Anchor on-chain program, a Next.js/TypeScript front end and an LLM-based dispute arbiter.</li>
+  </ul>
+</div>
+
+<div class="entry" style="break-inside: avoid">
+<h2>Research writing</h2>
+  <div class="row"><span class="title">Independent computational thesis series</span> <span class="date">2026</span></div>
+  <p>About 50 computational manuscripts on identifiability, observability and control in disease and space-medicine models, indexed at <a href="https://github.com/cloudynirvana/research-theses-hub">research-theses-hub</a>. Independent and not peer-reviewed; most include runnable Python. Selected:</p>
+  <ul>
+    <li><b>Closed-loop agentic care planning for cervical cancer</b> (#52): care framed as a partially observed control problem with decision gates; synthetic worked example and study protocol. Zenodo, doi:<a href="https://doi.org/10.5281/zenodo.23210715">10.5281/zenodo.23210715</a>.</li>
+    <li><b>Identifiability of a shared metabolic cancer ODE</b> (#9): Fisher-rank analysis showing a lactate/glucose ratio identifies 1 of 5 rates and a multi-channel snapshot 4 of 5.</li>
+    <li><b>Space-medicine models</b>: microgravity bone loss on Mars-transit schedules (#45), radiation bystander effects under solar particle events (#48), and drug degradation on the lunar surface (#50).</li>
   </ul>
 </div>
 
@@ -87,41 +100,34 @@
   <div>Systems biology, nonlinear dynamics, bioinformatics, bioprocess engineering.</div>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Postgraduate Diploma, Aviation Management</span> <span class="where">· Nigerian College of Aviation Technology, Zaria</span></span><span class="date">In progress</span></div>
-</div>
-<div class="entry">
-  <div class="row"><span><span class="title">B.Sc. Biotechnology (Hons)</span> <span class="where">· Nile University of Nigeria, Abuja</span></span><span class="date">2022</span></div>
-  <div>Project: green synthesis of silver nanoparticles from <i>Carica papaya</i> leaf extract; antioxidant and oxidative-stress assays.</div>
+  <div class="row"><span><span class="title">B.Sc. Biotechnology (Hons)</span> <span class="where">· Nile University of Nigeria, Abuja</span></span><span class="date">July 2022</span></div>
+  <div>Thesis: <a href="https://github.com/cloudynirvana/thesis-bsc-carica-papaya-agnp"><i>In vitro antidiabetic activity of silver nanoparticles synthesised from Carica papaya leaf extract</i></a>: nanoparticle synthesis, characterisation, and α-amylase and antioxidant assays.</div>
 </div>
 
 <h2>Experience</h2>
 <div class="entry">
-  <div class="row"><span><span class="title">Biotechnology Instructor</span> <span class="where">· NYSC, Etinan College of Health and Technology, Akwa Ibom</span></span><span class="date todo">YYYY–YYYY</span></div>
+  <div class="row"><span><span class="title">Biotechnology Instructor</span> <span class="where">· NYSC, Etinan College of Health and Technology, Akwa Ibom</span></span></div>
   <ul><li>Designed and taught biotechnology modules, including introductory mathematical modelling of biological processes; led laboratory sessions and supervised student projects with limited equipment.</li></ul>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Research Intern</span> <span class="where">· National Biotechnology Development Agency (NABDA), Abuja</span></span><span class="date todo">YYYY</span></div>
+  <div class="row"><span><span class="title">Research Intern</span> <span class="where">· National Biotechnology Development Agency (NABDA), Abuja</span></span></div>
   <ul><li>Molecular sequencing workflows and laboratory analysis on genetically modified crop projects; exposure to biosafety regulation.</li></ul>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Laboratory Intern</span> <span class="where">· Arubah Medical Diagnostic Services, Calabar</span></span><span class="date todo">YYYY</span></div>
+  <div class="row"><span><span class="title">Laboratory Intern</span> <span class="where">· Arubah Medical Diagnostic Services, Calabar</span></span></div>
   <ul><li>Processed clinical samples by PCR and spectrophotometry under laboratory quality-control procedures.</li></ul>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Managing Director</span> <span class="where">· Uloma Shopping Mall</span></span><span class="date todo">YYYY–YYYY</span></div>
-  <ul><li>Ran day-to-day operations, finances, inventory and supplier relationships for a retail business. <span class="todo">Add one number: staff, revenue, or an improvement you made.</span></li></ul>
-</div>
-<div class="entry">
-  <div class="row"><span><span class="title">POS Operator</span> <span class="where">· MoneyPoint Microfinance Bank</span></span><span class="date todo">YYYY–YYYY</span></div>
-  <ul><li>Processed electronic payments accurately and in line with banking compliance procedures.</li></ul>
+  <div class="row"><span><span class="title">Managing Director</span> <span class="where">· Uloma Shopping Mall</span> &nbsp;|&nbsp; <span class="title">POS Operator</span> <span class="where">· MoneyPoint Microfinance Bank</span></span></div>
+  <ul><li>Ran operations, finances, inventory and supplier relationships for a retail business; processed electronic payments in line with banking compliance procedures.</li></ul>
 </div>
 
 <h2>Skills</h2>
 <table class="skills">
-  <tr><td>Programming</td><td>Python (NumPy, SciPy, Matplotlib, PyTorch, Stable-Baselines3, Gymnasium, pytest), MATLAB, Git and GitHub Actions, Jupyter/Colab</td></tr>
-  <tr><td>Modelling</td><td>ODE modelling, stability and bifurcation analysis, structural identifiability, Monte Carlo, agent-based simulation, Bayesian updating, reinforcement learning</td></tr>
-  <tr><td>Statistics</td><td>Bootstrap confidence intervals, nonparametric and paired tests, multiple-comparison correction, experimental design with held-out evaluation</td></tr>
-  <tr><td>Laboratory</td><td>PCR, DNA sequencing workflows, spectrophotometry, nanoparticle synthesis, enzyme and antioxidant assays, BLAST</td></tr>
+  <tr><td>Programming</td><td>Python (NumPy, SciPy, Matplotlib, PyTorch, Stable-Baselines3, Gymnasium, FastAPI, pytest), TypeScript/React, MATLAB; working knowledge of Rust (Anchor); Git, GitHub Actions, Jupyter</td></tr>
+  <tr><td>Modelling</td><td>ODEs, stability and bifurcation analysis, structural and practical identifiability, Monte Carlo, agent-based simulation, Bayesian updating, reinforcement learning</td></tr>
+  <tr><td>Statistics</td><td>Bootstrap confidence intervals, paired and nonparametric tests, multiple-comparison correction, held-out evaluation design</td></tr>
+  <tr><td>Laboratory</td><td>PCR, sequencing workflows, spectrophotometry, nanoparticle synthesis, enzyme and antioxidant assays, BLAST</td></tr>
 </table>
 
 <h2>Certifications</h2>

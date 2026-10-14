@@ -1,6 +1,6 @@
 # Kelechi Emeka Ogbonna
 
-**Bioinformatics and computational biology.** B.Sc. Biotechnology, Nile University of Nigeria (2022); pursuing an M.Sc. in Bioinformatics.
+**Computational modelling and simulation: biology, autonomy and spaceflight.** B.Sc. Biotechnology, Nile University of Nigeria (2022); M.Sc. Biotechnology in progress, Ahmadu Bello University. ORCID [0009-0006-0065-8226](https://orcid.org/0009-0006-0065-8226).
 
 I write tested Python tools for biological data and models, and I try to be precise about what each result is: a measurement, a simulation, or a hypothesis. Lately I also build simulations of decision-making and control for spaceflight.
 
@@ -16,13 +16,15 @@ Agent-based simulation of long-horizon R&D strategy across procedurally generate
 PPO agents trained to land a rocket under four reward designs and five seeds, evaluated on the unshaped reward. Reproduces a hover reward hack, fixes it with potential-based shaping, and stress-tests agents against a hand-written control law under wind and gravity dispersions.
 `Python` `PyTorch` `Stable-Baselines3` `Gymnasium`
 
+<!-- qslite hidden until the repository is public:
 ### [qslite](https://github.com/cloudynirvana/qslite): viral quasispecies from sequencing reads
 Aligns reads with minimap2, counts alleles at every position, measures within-host diversity (Shannon entropy, nucleotide diversity), calls minor variants with a binomial error model and FDR control, measures linkage between variant sites from spanning reads, and exports the population as a GFA variation graph.
 On the HIV test dataset from V-pipe and ShoRAH, it **recovers all 64 SNVs that ShoRAH reports**. Includes tests on a synthetic two-haplotype population and CI.
 `Python` `pysam` `minimap2` `SciPy` `GFA`
+-->
 
 ### [Project Confluence](https://github.com/cloudynirvana/project-confluence): dynamical models of cancer metabolism
-An ODE framework for metabolic reprogramming across cancer types, with identifiability analysis and adaptive-control experiments. Fitting to real CCLE metabolomics data (928 cell lines) raised the number of identifiable parameters from 7 to 15 of 17. About 190 Python modules and 315 automated tests run in GitHub Actions. All results are in-silico; none are validated on patients.
+An ODE framework for metabolic reprogramming across cancer types, with identifiability analysis and adaptive-control experiments. Fitting to real CCLE metabolomics data (928 cell lines) raised the number of identifiable parameters from 7 to 15 of 17. About 190 Python modules and 330+ automated tests run in GitHub Actions. All results are in-silico; none are validated on patients.
 `Python` `NumPy/SciPy` `ODEs` `pytest` `FastAPI`
 
 ### [TNBC Metabolic Strain Model](https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD): ATP and ROS dynamics in triple-negative breast cancer
@@ -33,9 +35,9 @@ A compact ODE model with stability and bifurcation analysis and parallel paramet
 
 | Area | Evidence |
 | --- | --- |
-| Sequence data analysis | qslite: alignment, pileups, variant calling, linkage |
-| Graphs | qslite (GFA variation graphs); Confluence (Forman-Ricci curvature on interaction networks) |
-| Software practice | pytest suites and GitHub Actions in qslite and Confluence; packaged, installable code |
+| Simulation & statistics | Adaptive Convergence (agent-based model, bootstrap CIs, Holm-corrected tests); Rocket Lander RL (multi-seed PPO, Monte Carlo dispersions) |
+| Graphs | Confluence (Forman-Ricci curvature on interaction networks); Adaptive Convergence (technology dependency graphs) |
+| Software practice | pytest suites in Confluence, Adaptive Convergence, Rocket Lander RL and Complexity Science; GitHub Actions; packaged, installable code |
 | Mathematical modelling | ODEs, identifiability, bifurcation analysis (Confluence, TNBC) |
 | Wet lab | B.Sc. project: plant-extract silver nanoparticles and in vitro enzyme (α-amylase) assays |
 
