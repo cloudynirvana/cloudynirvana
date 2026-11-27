@@ -72,6 +72,7 @@ Shorter exploratory write-ups (mostly cancer-modelling thought experiments, all 
 
 - **Anthropic:** AI Fluency · Claude 101 · Model Context Protocol Foundations
 - **Hugging Face:** Fundamentals of Agents (2026)
+- **Mercor:** [Introduction to Agents](https://work.mercor.com/learn/verify/MRC-2026-WB56432K) · [Mastering Model Mechanics](https://work.mercor.com/learn/verify/MRC-2026-5GAV5YLN) (AI agent evaluation, Nov 2026, verified)
 - **Google:** Project Management Certificate (Coursera)
 - **IELTS Academic:** 7.5 overall (CEFR C1), May 2024
 
