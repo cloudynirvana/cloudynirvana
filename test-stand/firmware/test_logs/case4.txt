@@ -1,0 +1,12 @@
+# W-2750 stand controller v2 ready (commands: HB STATUS CAL_P CAL_IMU FIRE ABORT)
+> STATUS
+STATUS SAFE arm=1 link=OK calP=0 calIMU=0 P bar=0.31,-0.12,0.22 att roll/pitch=0.00/0.00
+# ARMED
+> STATUS
+STATUS ARMED arm=1 link=OK calP=0 calIMU=0 P bar=0.31,-0.12,0.22 att roll/pitch=1.86/-2.21
+> CAL_IMU
+ACK CAL_IMU gyro bias dps: 1.595 -0.893 0.000  level roll/pitch deg: 0.00 -2.01  |g| 1.000
+> STATUS
+STATUS ARMED arm=1 link=OK calP=0 calIMU=1 P bar=0.31,-0.12,0.22 att roll/pitch=0.00/0.00
+
+Restart the simulation

@@ -1,0 +1,28 @@
+# W-2750 stand controller v2 ready (commands: HB STATUS CAL_P CAL_IMU FIRE ABORT)
+# ARMED
+> CAL_P
+ACK CAL_P offsets bar: 0.310 -0.120 0.220
+> CAL_IMU
+ACK CAL_IMU gyro bias dps: 1.595 -0.893 0.000  level roll/pitch deg: 0.00 -2.01  |g| 1.000
+> FIRE
+ACK FIRE: countdown 3 s
+t_ms,P1_bar,P2_bar,P3_bar,roll_deg,pitch_deg,state
+6104,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6204,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6304,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6404,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6504,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6604,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6704,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6804,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+6904,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+7004,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+7104,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+7204,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+7304,-0.00,0.00,-0.00,0.00,0.00,RUNNING
+# SAFE: link lost > 500 ms
+# cycle the ARM key to re-arm
+> STATUS
+STATUS SAFE arm=1 link=LOST calP=1 calIMU=1 P bar=-0.00,0.00,-0.00 att roll/pitch=0.00/0.00
+
+Restart the simulation
