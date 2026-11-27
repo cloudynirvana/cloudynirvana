@@ -2,127 +2,211 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Kelechi Emeka Ogbonna – CV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelechi Emeka Ogbonna CV</title>
 <style>
-  @page { size: A4; margin: 15mm 16mm; }
+  @page { size: A4; margin: 14mm 15mm; }
   :root { --ink: #1a1a1a; --muted: #555; --accent: #0b4f6c; --rule: #c9d3d8; }
   * { box-sizing: border-box; }
-  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 10pt; line-height: 1.42; margin: 0; background: #fff; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--ink); font-size: 9.8pt; line-height: 1.4; margin: 0; background: #fff; }
+  main { max-width: 820px; margin: 0 auto; }
   h1 { font-size: 20pt; margin: 0; color: var(--accent); }
   .tagline { font-size: 11pt; margin: 2px 0 3px; font-weight: 600; }
-  .contact { color: var(--muted); font-size: 9.2pt; }
+  .contact { color: var(--muted); font-size: 9pt; }
   .contact a { color: var(--muted); }
-  h2 { break-after: avoid; font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 13px 0 6px; }
-  .entry { margin-bottom: 8px; break-inside: avoid; }
+  h2 { break-after: avoid; font-size: 10.3pt; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 2px; margin: 12px 0 5px; }
+  .entry { margin-bottom: 7px; break-inside: avoid; }
   .row { display: flex; justify-content: space-between; gap: 12px; }
   .title { font-weight: 700; }
-  .where { color: var(--muted); }
   .date { color: var(--muted); white-space: nowrap; }
+  .note { color: var(--muted); font-size: 9pt; font-style: italic; }
   ul { margin: 2px 0 0 0; padding-left: 16px; }
   li { margin: 2px 0; }
   a { color: var(--accent); text-decoration: none; }
   p { margin: 0 0 4px; }
   .skills td { padding: 2px 10px 2px 0; vertical-align: top; }
   .skills td:first-child { font-weight: 700; white-space: nowrap; }
+  .pdf { display: inline-block; margin-top: 6px; font-weight: 600; }
+  @media screen { body { padding: 24px 16px; } }
+  @media print { .pdf { display: none; } }
 </style>
 </head>
 <body>
+<main>
 
 <header>
   <h1>Kelechi Emeka Ogbonna</h1>
-  <div class="tagline">Biotechnologist who builds computer simulations</div>
+  <div class="tagline">Biotechnologist and self-taught engineer. I build computer models of the body, of disease and of rockets.</div>
   <div class="contact">
-    Nigeria · <a href="mailto:kelechiogbonna300@gmail.com">kelechiogbonna300@gmail.com</a> ·
+    Akwa Ibom State, Nigeria (open to remote work, internships and relocation) ·
+    <a href="mailto:keonix200@gmail.com">keonix200@gmail.com</a> ·
     <a href="https://github.com/cloudynirvana">github.com/cloudynirvana</a> ·
-    ORCID <a href="https://orcid.org/0009-0006-0065-8226">0009-0006-0065-8226</a>
+    ORCID <a href="https://orcid.org/0009-0006-0065-8226">0009-0006-0065-8226</a> ·
+    <a href="https://x.com/Kelechi_Wagen_s">x.com/Kelechi_Wagen_s</a>
   </div>
+  <a class="pdf" href="https://github.com/cloudynirvana/cloudynirvana/raw/main/cv/Kelechi_Ogbonna_CV.pdf">Download this CV as a PDF</a>
 </header>
 
 <h2>About me</h2>
-<p>I trained as a biotechnologist and now write software that simulates how things behave. Examples include diseases in the body, an AI landing a rocket, and space programmes choosing what to build. I care about testing my work properly and saying clearly what a result does and does not prove. I am looking for an internship or graduate role in computer modelling, space life sciences or simulation.</p>
+<p>I trained in biotechnology and I am now doing an M.Sc. in Medical Biochemistry at the University of Uyo. I write software that simulates how living things and machines behave. Examples are frozen blood cells for space trips, medicines in astronauts, drug safety and rocket engines. I test my own results hard and I say clearly which parts are lab work, which are computer models and which are ideas. I want a research or engineering role where biology, health and space meet.</p>
 
-<h2>Projects</h2>
+<h2>Health and biology</h2>
+
+<div class="entry">
+  <div class="row"><span class="title">Freezing blood for long space trips (CRYO-RESTORE, my M.Sc. project)</span><span class="date">2026</span></div>
+  <ul>
+    <li>Wrote the M.Sc. proposal: freeze human red blood cells in five ways, thaw them, and measure the damage (cell bursting, oxidation, haemoglobin and energy levels).</li>
+    <li>Built four computer models before going to the lab. They cover damage over time, freezing-agent flow through the cell, energy recovery after thawing, and 1,368 possible protocols.</li>
+    <li>The models showed that washing out the freezing agent is the step that bursts cells. That changed the lab plan. These are model predictions, still to be tested in the lab.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/space-medicine">Will the same medicine work in orbit?</a></span><span class="date">2026</span></div>
+  <ul>
+    <li>Combined 7 NASA spaceflight studies of mouse livers from NASA's open science data. A key drug-processing gene rose about 30% in 6 of the 7 missions.</li>
+    <li>Linked this to antibiotics. Drugs cleared by that enzyme, such as clarithromycin, may leave the body faster in space. This is mouse gene data, not a human result.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title">Can a laptop spot drugs that might stop the heart?</span><span class="date">2026</span></div>
+  <ul>
+    <li>Trained machine-learning models on 13,445 molecules to predict which ones block a heart channel linked to deadly rhythm problems. The best model scored 0.91 (1.0 is perfect).</li>
+    <li>Showed that the usual way of testing flatters the score. On truly new kinds of molecules it fell to 0.85. I wrote a simple check that predicts this gap before training.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Modelling how cancer cells use energy (Project Confluence)</a></span><span class="date">2025 to 2026</span></div>
+  <ul>
+    <li>Wrote a mathematical model of cancer-cell metabolism in about 190 Python modules, checked by over 300 automated tests. I fitted it to lab data from 928 cancer cell lines.</li>
+    <li>Later audited my own claim. A single snapshot of lab data pins down only 4 of the 17 unknowns; time-course data would pin down 15. I published that correction.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title">Heat-risk warnings for Nigeria (El Niño Risk Watch)</span><span class="date">2026</span></div>
+  <ul>
+    <li>Built a public dashboard for all 36 states and the FCT. It refreshed every 6 hours from five free satellite and weather feeds, to warn people before dangerous heat.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/thesis-bsc-carica-papaya-agnp">Silver nanoparticles from pawpaw leaves (B.Sc. wet-lab project)</a></span><span class="date">2022</span></div>
+  <ul>
+    <li>Made silver nanoparticles from papaya leaf extract and tested them in the lab against two sugar-digesting enzymes linked to diabetes.</li>
+    <li>In 2026 I re-analysed my own data honestly. The plain leaf extract worked better than the nanoparticles, and the standard drug beat both.</li>
+  </ul>
+</div>
+
+<h2>Space and engineering</h2>
+<p class="note">All engine and rocket work is computer design and simulation. Nothing has been printed, built or fired yet.</p>
+
+<div class="entry">
+  <div class="row"><span class="title">My own rocket engine (W-2750) and a first test chamber (T01)</span><span class="date">Oct 2026 to now</span></div>
+  <ul>
+    <li>Designed a large methane and oxygen engine (about 2.75 MN of thrust) from the chemistry up. Every part was generated in code, then stress-checked with finite-element models.</li>
+    <li>The stress checks found three failures that hand sums missed. I fixed them, and every part now passes.</li>
+    <li>Built a computer model of metal 3D printing, checked against public NIST data (7.8% error on a second alloy). I used it to make a print-ready file for a small cooled copper test chamber.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title">Reusable rocket and electronics</span><span class="date">2026</span></div>
+  <ul>
+    <li>Modelled a full-size reusable rocket (Wakanda-3) in FreeCAD. A real-geometry check showed the engines could not steer in a 4.2 m body, so I widened it to 5.5 m.</li>
+    <li>Designed engine test-stand electronics in KiCad with ESP32 control code that passes all 4 safety cases in simulation.</li>
+    <li>Designed a 600 mm reusable model rocket (Wakanda 009) and tested it in 2,000 simulated flights.</li>
+  </ul>
+</div>
+
+<div class="entry">
+  <div class="row"><span class="title">A chip for spacecraft (WK-1 "Ngao")</span><span class="date">Nov 2026</span></div>
+  <ul>
+    <li>Designed a small motor-control chip that corrects radiation errors, using free open-source chip tools. It took 1,036 random bit-flips with zero wrong outputs, and passed all layout checks.</li>
+  </ul>
+</div>
+
+<h2>AI and data</h2>
 
 <div class="entry">
   <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/rocket-lander-rl">Teaching an AI to land a rocket</a></span><span class="date">2026</span></div>
   <ul>
-    <li>Trained an AI to land a rocket in a physics simulator. It landed safely on the pad <b>499 times out of 500</b>; a hand-written control program managed 399.</li>
-    <li>Showed how a badly designed reward makes an AI "cheat": paid for staying upright, it learned to hover forever instead of landing. I fixed the reward, and landings returned to 98%.</li>
-    <li>Tested the AI in strong wind and heavier gravity it had never seen, and reported where it failed as well as where it succeeded.</li>
+    <li>Trained an AI to land a rocket in a physics simulator. It landed on the pad 499 times out of 500; a hand-written control program managed 399.</li>
+    <li>Showed how a badly designed reward makes an AI "cheat". Paid for staying upright, it learned to hover forever. I fixed the reward and landings returned to 98%.</li>
   </ul>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/adaptive-convergence">When should a space programme abandon a plan?</a></span><span class="date">2026</span></div>
+  <div class="row"><span class="title">Three NASA data projects</span><span class="date">Nov 2026</span></div>
   <ul>
-    <li>Built a simulation of a space programme choosing which technologies to develop for the Moon, Mars and beyond. Some paths secretly lead nowhere.</li>
-    <li>Compared six decision strategies across 400 simulated worlds. The best was "commit fully, but quit a project once the evidence shows it is failing". It achieved <b>16% more progress</b> and <b>cut wasted budget by more than half</b> compared with never quitting.</li>
-    <li>Found and corrected a mistake in my own model, then reran every experiment before reporting results.</li>
+    <li>Found planets in Kepler telescope data with a neural network (score 0.97 out of 1.0). Also mapped Mars terrain from rover images and flagged spacecraft faults.</li>
   </ul>
 </div>
 
 <div class="entry">
-  <div class="row"><span class="title"><a href="https://github.com/cloudynirvana/project-confluence">Modelling how cancer cells use energy</a> (Project Confluence)</span></div>
+  <div class="row"><span class="title">More space software</span><span class="date">2026</span></div>
   <ul>
-    <li>Wrote a mathematical model of cancer-cell metabolism and tested it against real laboratory data from 928 cancer cell lines.</li>
-    <li>Using real data instead of made-up data let the model pin down <b>15 of its 17 unknowns</b>, up from 7. The software is about 43,000 lines of Python, checked by more than 330 automated tests.</li>
-  </ul>
-</div>
-
-<div class="entry">
-  <div class="row"><span class="title">Other projects</span></div>
-  <ul>
-    <li><a href="https://github.com/cloudynirvana/TNBC-Metabolic-Strain-MOD"><b>Breast cancer energy model</b></a> (M.Sc. research): simulated how aggressive breast-cancer cells handle energy and stress.</li>
-    <li><a href="https://github.com/cloudynirvana/fly-brain-vs-tumor"><b>Fly Brain vs. Tumor</b></a>: a browser game where a simplified fruit-fly brain learns to dose a simulated tumour.</li>
-    <li><a href="https://github.com/cloudynirvana/simplifyr"><b>simplifyr</b></a>: a payments app built at a 2026 hackathon (Solana Mobile track).</li>
+    <li><a href="https://github.com/cloudynirvana/mars-impact-scheduler">Mars transfer planner</a>: 6,770 Earth to Mars trips worked out from NASA JPL data, matching JPL to 0.007 degrees.</li>
+    <li><a href="https://github.com/cloudynirvana/lunar-south-pole">Moon south pole sunlight model</a> from NASA laser height maps over an 18.6-year cycle.</li>
+    <li><a href="https://github.com/cloudynirvana/adaptive-convergence">When should a space programme quit a plan?</a> The best strategy in 400 simulated worlds made 16% more progress.</li>
   </ul>
 </div>
 
 <h2>Research writing</h2>
-<div class="entry">
-  <p>Around 50 independent research papers (not peer-reviewed) on modelling disease and astronaut health, collected at <a href="https://github.com/cloudynirvana/research-theses-hub">research-theses-hub</a>. Highlights:</p>
-  <ul>
-    <li><b>AI-assisted planning of cervical cancer care</b>, published on Zenodo (doi:<a href="https://doi.org/10.5281/zenodo.23210715">10.5281/zenodo.23210715</a>).</li>
-    <li><b>Astronaut health</b>: bone loss on a trip to Mars, radiation damage from solar storms, and how medicines degrade on the Moon.</li>
-  </ul>
-</div>
+<p>16 open papers with DOIs on Zenodo (2026, not peer reviewed), each with its own code and checked references. Full list on <a href="https://orcid.org/0009-0006-0065-8226">ORCID</a>. Highlights:</p>
+<ul>
+  <li>Health: <a href="https://doi.org/10.5281/zenodo.23834525">food, tumour metabolism and gut bacteria</a>; <a href="https://doi.org/10.5281/zenodo.23210715">AI-assisted care planning for cervical cancer</a>; <a href="https://doi.org/10.5281/zenodo.23834519">a live satellite dashboard for El Niño heat risk</a>; <a href="https://doi.org/10.5281/zenodo.23844593">the health and climate cost of gas flaring</a>; <a href="https://doi.org/10.5281/zenodo.23912194">brain activity in mouse, crow and macaque</a>.</li>
+  <li>Energy and method: <a href="https://doi.org/10.5281/zenodo.23834537">biogas from Nigerian waste</a>; <a href="https://doi.org/10.5281/zenodo.23844408">bio-derived rocket fuels</a>; <a href="https://doi.org/10.5281/zenodo.23844790">five reproducibility checks for students</a>.</li>
+  <li>Space: <a href="https://doi.org/10.5281/zenodo.23834516">reusable rockets for Nigeria</a>; <a href="https://doi.org/10.5281/zenodo.23834531">one rocket family for Africa</a>; <a href="https://doi.org/10.5281/zenodo.23834523">a lunar south pole landing</a>; <a href="https://doi.org/10.5281/zenodo.23844950">jet engines from first principles</a>.</li>
+</ul>
 
-<div class="entry" style="break-inside: avoid">
 <h2>Education</h2>
 <div class="entry">
-  <div class="row"><span><span class="title">M.Sc. Biotechnology</span> <span class="where">· Ahmadu Bello University, Zaria</span></span><span class="date">In progress</span></div>
+  <div class="row"><span><span class="title">M.Sc. Medical Biochemistry</span> · University of Uyo</span><span class="date">In progress</span></div>
+  <div class="row"><span><span class="title">B.Sc. Biotechnology, Second Class Upper</span> · Nile University of Nigeria, Abuja</span><span class="date">2022</span></div>
 </div>
-<div class="entry">
-  <div class="row"><span><span class="title">B.Sc. Biotechnology (Hons)</span> <span class="where">· Nile University of Nigeria, Abuja</span></span><span class="date">2022</span></div>
-  <div>Final project: made silver nanoparticles from papaya leaves and tested them in the lab as a possible diabetes treatment.</div>
-</div>
-</div>
+
+<h2>Certifications</h2>
+<ul>
+  <li>Anthropic: AI Fluency; Claude 101; Model Context Protocol Foundations</li>
+  <li>Hugging Face: Fundamentals of Agents (2026)</li>
+  <li>Google Project Management Certificate (Coursera)</li>
+  <li>IELTS Academic 7.5 overall (CEFR C1), May 2024. English is my first language.</li>
+</ul>
 
 <h2>Experience</h2>
 <div class="entry">
-  <div class="row"><span><span class="title">Biotechnology Instructor</span> <span class="where">· NYSC, Etinan College of Health and Technology</span></span></div>
-  <ul><li>Taught biotechnology courses and ran laboratory classes; introduced students to simple mathematical models of biology.</li></ul>
+  <div class="row"><span><span class="title">Founder</span> · Wakanda Series (Kelechi Wagen Services), Akwa Ibom</span><span class="date">Oct 2026 to now</span></div>
+  <p>Engine, rocket and satellite design work above. Prepared briefs for the Akwa Ibom State space agency (ASTAL), which agreed to support the programme.</p>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Research Intern</span> <span class="where">· National Biotechnology Development Agency, Abuja</span></span></div>
-  <ul><li>Worked on DNA sequencing and lab analysis for genetically modified crop projects.</li></ul>
+  <div class="row"><span><span class="title">NYSC Educator</span> · Etinan College of Health and Technology</span></div>
+  <p>Taught biology, medical laboratory science and PCR to diploma students.</p>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Laboratory Intern</span> <span class="where">· Arubah Medical Diagnostic Services, Calabar</span></span></div>
-  <ul><li>Tested patient samples using PCR and other standard lab methods.</li></ul>
+  <div class="row"><span><span class="title">Research Intern</span> · Arubah Medical Diagnostic Services</span></div>
+  <p>Collected blood samples and ran malaria and Widal tests.</p>
 </div>
 <div class="entry">
-  <div class="row"><span><span class="title">Managing Director</span> <span class="where">· Uloma Shopping Mall</span> &nbsp;|&nbsp; <span class="title">POS Operator</span> <span class="where">· MoneyPoint Microfinance Bank</span></span></div>
-  <ul><li>Ran a retail business day to day (staff, stock, suppliers and money) and handled customer payments at a microfinance bank.</li></ul>
+  <div class="row"><span><span class="title">Research Intern</span> · National Biotechnology Development Agency (NABDA), Abuja</span></div>
+  <p>Observed controlled cross-pollination of crops in the greenhouse.</p>
+</div>
+<div class="entry">
+  <div class="row"><span><span class="title">Managing Director</span> · Uloma Shopping Mall</span></div>
+  <p>Managed six staff, sales, stock and finances.</p>
 </div>
 
 <h2>Skills</h2>
 <table class="skills">
-  <tr><td>Programming</td><td>Python (including machine learning and scientific libraries), TypeScript, MATLAB, Git</td></tr>
-  <tr><td>Methods</td><td>Computer simulation, mathematical modelling, machine learning, statistics</td></tr>
-  <tr><td>Laboratory</td><td>PCR, DNA sequencing, spectrophotometry, nanoparticle synthesis</td></tr>
-  <tr><td>Other</td><td>IELTS 7.5 · Google Project Management certificate · Anthropic AI courses</td></tr>
+  <tr><td>Programming</td><td>Python (NumPy, SciPy, pandas, PyTorch, scikit-learn, RDKit), C#/.NET, Verilog, ESP32 C++, Git, pytest</td></tr>
+  <tr><td>Biology and health</td><td>Cell metabolism models, drug-safety machine learning, NASA spaceflight gene data, cryopreservation models</td></tr>
+  <tr><td>Engineering</td><td>FreeCAD, CadQuery, PicoGK, CalculiX, Gmsh, Cantera, CoolProp, RocketPy, MuJoCo, KiCad, Blender</td></tr>
+  <tr><td>Laboratory</td><td>PCR, nanoparticle synthesis from plant extracts, enzyme assays, malaria and Widal testing, FDM 3D printing</td></tr>
 </table>
 
+<p style="margin-top:8px">References available on request.</p>
+</main>
 </body>
 </html>
